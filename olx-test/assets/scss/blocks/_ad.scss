@@ -1,0 +1,27 @@
+.ad-item {
+  min-height: 295px;
+  padding: 20px;
+  background: $white;
+  margin-bottom: 30px;
+}
+
+.ad-item__title {
+  font-size: $title-font-size;
+  font-weight: 400;
+  color: $blue;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-bottom: 10px;
+}
+
+.ad-item__info {
+  font-size: $regular-font-size;
+  font-weight: 400;
+  color: $gray;
+  margin-bottom: 2px;
+
+  &:last-of-type {
+    margin-bottom: 15px;
+  }
+}

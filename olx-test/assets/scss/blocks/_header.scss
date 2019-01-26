@@ -1,0 +1,12 @@
+.header {
+  padding: 20px 0;
+}
+
+.header__logo {
+  display: block;
+  height: 85px;
+  width: 85px;
+  background-image: url('~assets/images/logo.svg');
+  background-size: 100%;
+  overflow: hidden;
+}

@@ -1,0 +1,15 @@
+.main {
+  margin: 25px 0 30px;
+}
+
+.ad-section {
+  .row {
+    margin-left: -20px;
+    margin-right: -20px;
+
+    > div {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.pagination__button {
+  font-size: $pagination-font-size;
+  line-height: 1;
+  color: $purple;
+  background: $white;
+  padding: 7px 11px;
+  margin-left: 5px;
+
+  &--text {
+    margin-left: 10px;
+  }
+}

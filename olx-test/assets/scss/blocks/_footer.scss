@@ -1,0 +1,9 @@
+.footer {
+  height: 75px;
+  background: $footer-bg;
+  margin-top: auto;
+
+  @media (min-width: $tablet) {
+    height: 80px;
+  }
+}
