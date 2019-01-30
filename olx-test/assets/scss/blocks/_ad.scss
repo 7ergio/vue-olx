@@ -24,4 +24,23 @@
   &:last-of-type {
     margin-bottom: 15px;
   }
+
+  span {
+
+    &:nth-child(odd):after {
+      content: ':';
+      display: inline-block;
+      margin-right: 3px;
+    }
+
+    &:nth-child(even):after {
+      content: '|';
+      display: inline-block;
+      margin: 0 5px;
+    }
+
+    &:last-child:after {
+      display: none;
+    }
+  }
 }

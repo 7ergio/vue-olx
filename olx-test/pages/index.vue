@@ -3,19 +3,19 @@
     <div class="content">
       <section class="ad-section">
         <div class="row">
-          <!--<ad />-->
           <div class="col-md-6 col-lg-4" v-for="ad in ads">
             <div class="ad-item">
               <h2 class="ad-item__title">{{ad.title}}</h2>
               <h6 class="ad-item__info">Dodano: {{ad.created}}</h6>
-              <h6 class="ad-item__info" v-for="(key, value) in ad.params">
-                <span>{{key, value}}</span>
+              <h6 class="ad-item__info">
+                <template v-for="param in ad.params">
+                  <span v-for="paramItem in param">{{paramItem}}</span>
+                </template>
               </h6>
               <p>{{ad.description}}</p>
             </div>
           </div>
         </div>
-        <!--<pagination />-->
         <div class="pagination">
           <nuxt-link
               :to="$route.path + '?page=' + (+currentPage - 1)"
@@ -44,14 +44,9 @@
 </template>
 
 <script>
-//import Ad from '~/components/Ad'
-//import Pagination from '~/components/Pagination'
 
 export default {
-  components: {
-//    'ad': Ad,
-//    'pagination': Pagination
-  },
+
   beforeCreate () {
     this.$store.dispatch('loadPages', (typeof this.$route.query.page != 'undefined') ? this.$route.query.page : 1)
   },

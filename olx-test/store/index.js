@@ -10,7 +10,6 @@ const createStore = () => {
             totalPages: null
         },
         actions: {
-            // loadPages ({ commit }) {
             loadPages ({ commit }, page) {
                 axios
                     .get(JSON_URI)
