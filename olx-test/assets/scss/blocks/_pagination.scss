@@ -13,5 +13,15 @@
 
   &--text {
     margin-left: 10px;
+    display: none;
+  }
+
+  &--visible {
+    display: block;
+  }
+
+  &--disabled {
+    color: $gray;
+    pointer-events: none;
   }
 }
